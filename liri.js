@@ -29,24 +29,16 @@ function tweets() {
   };
   client.get('statuses/user_timeline', params, (error, tweets, response) => {
     if (!error && response.statusCode === 200) {
-      fs.appendFile('terminal.log', ('================ ENTRY LOG ================\n'), (err) => {
-        if (err) throw error;
-      });
-      console.log(' ');
       console.log('Last 10 Tweets:')
       for (i = 0; i < tweets.length; i++) {
-        var number = i + 1;
-        console.log(' ');
-        console.log([i + 1] + '. ' + tweets[i].text);
-        console.log('Created on: ' + tweets[i].created_at);
-        console.log(' ');
-        fs.appendFile('terminal.log', (number + '. Tweet: ' + tweets[i].text + '\nCreated at: ' + tweets[i].created_at + ' \n'), (err) => {
-          if (err) throw error;
+        console.log('sewerWeasel: ' + tweets[i].text);
+        console.log('Tweeted On: ' + tweets[i].created_at);
+        fs.appendFile('log.txt', ('sewerWeasel: ' + tweets[i].text + '\nTweeted On: ' + tweets[i].created_at + ' \n'), (err) => {
+          if (err) {
+            return console.log(err);
+          }
         });
       }
-      fs.appendFile('terminal.log', ('===========================================\n \n'), (err) => {
-        if (err) throw error;
-      });
-    }
-  });
-}
+    };
+  })
+};
