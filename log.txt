@@ -1,4 +1,9 @@
-sewerWeasel: working on node-spotify-api package today. | Thu Aug 17 14:05:03 +0000 2017 
 sewerWeasel: code code code code code | Thu Aug 17 14:03:08 +0000 2017 
-sewerWeasel: Twitter is working! | Thu Aug 17 02:07:37 +0000 2017 
 sewerWeasel: Hello Twitter! #myfirstTweet | Sat Aug 12 20:56:07 +0000 2017 
+sewerWeasel: working on node-spotify-api package today. | Thu Aug 17 14:05:03 +0000 2017 
+sewerWeasel: Twitter is working! | Thu Aug 17 02:07:37 +0000 2017 
+
+Artist: For Today
+Song: Devastator
+Preview Link: https://p.scdn.co/mp3-preview/7fee75b4e75c7c7e8606c89bf9c384476623a98c?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Breaker

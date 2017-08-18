@@ -1,21 +1,20 @@
-var request = require('request');
 var fs = require('fs');
 var action = process.argv[2];
 var value = process.argv[3];
 
 switch (action) {
   case 'my-tweets':
-    tweets();
-    break;
+  tweets();
+  break;
   case 'spotify-this-song':
-    spotify();
-    break;
+  spotify();
+  break;
   case 'movie-this':
-    movie();
-    break;
+  movie();
+  break;
   case 'do-what-it-says':
-    says();
-    break;
+  says();
+  break;
 }
 
 function tweets() {
@@ -34,9 +33,9 @@ function tweets() {
         console.log('sewerWeasel: ' + tweets[i].text);
         console.log('Tweeted On: ' + tweets[i].created_at);
         console.log('==================================================');
-        fs.appendFile('log.txt', ('sewerWeasel: ' + tweets[i].text + ' | ' + tweets[i].created_at + ' \n'), (err) => {
-          if (err) {
-            return console.log(err);
+        fs.appendFile('log.txt', ('sewerWeasel: ' + tweets[i].text + ' | ' + tweets[i].created_at + ' \n'), (error) => {
+          if (error) {
+            return console.log(error);
           }
         });
       }
@@ -50,10 +49,10 @@ function spotify() {
     id: 'ea48b89926cb46dea4abc0f5712eb362',
     secret: '9cc83f9b1417415fba0a33868a7819a0'
   });
-  // if (value === null) {
-  //   output = "The Sign";
+  // if (value === undefined) {
+  //   output = 'The Sign';
   // }
-  spotify.search({ type: 'track', query: value }, (err, data) => {
+  spotify.search({ type: 'track', query: value }, (error, data) => {
     // if (!error && response.statusCode === 200) {
       console.log('==================================================');
       console.log("Artist: " + data.tracks.items[0].artists[0].name);
@@ -61,9 +60,17 @@ function spotify() {
       console.log("Album: " + data.tracks.items[0].album.name);
       console.log("Spotify Preview Link: " + data.tracks.items[0].external_urls.spotify);
       console.log('==================================================');
-      if (err) {
-        return console.log(err);
+      fs.appendFile('log.txt', ('\nArtist: ' + data.tracks.items[0].artists[0].name + '\nSong: ' + data.tracks.items[0].name + '\nPreview Link: ' + data.tracks.items[0].preview_url + '\nAlbum: ' + data.tracks.items[0].album.name + '\n')), (error) => {
+        if (error) {
+          return console.log(error);
+        }
       }
     // }
   });
 };
+
+
+
+// function movie() {
+//   var request = require('request');
+// }
