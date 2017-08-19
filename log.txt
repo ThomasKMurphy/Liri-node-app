@@ -62,3 +62,18 @@ Plot: undefined
 Actors: undefined
 Rotten Tomatoes Rating: undefined
 Rotten Tomatoes URL: undefined
+
+Artist: Adele
+Song: Hello
+Preview Link: https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Hello
+
+Artist: Adele
+Song: Hello
+Preview Link: https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Hello
+
+Artist: Adele
+Song: Hello
+Preview Link: https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Hello

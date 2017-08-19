@@ -26,7 +26,7 @@ function tweets() {
     count: 10
   };
   client.get('statuses/user_timeline', params, (err, tweets, response) => {
-    if (!error && response.statusCode === 200) {
+    if (!err && response.statusCode === 200) {
       console.log('Last 10 Tweets:')
       for (i = 0; i < tweets.length; i++) {
         console.log('==================================================');
@@ -49,23 +49,25 @@ function spotify() {
     id: 'ea48b89926cb46dea4abc0f5712eb362',
     secret: '9cc83f9b1417415fba0a33868a7819a0'
   });
-  // if (value === null) {
-  //   value = 'The Sign';
-  // }
   spotify.search({ type: 'track', query: value, limit: 5 }, (err, data) => {
-    // if (!error && response.statusCode === 200) {
       console.log('==================================================');
       console.log("Artist: " + data.tracks.items[0].artists[0].name);
       console.log("Song Name: " + data.tracks.items[0].name);
       console.log("Album: " + data.tracks.items[0].album.name);
       console.log("Spotify Preview Link: " + data.tracks.items[0].external_urls.spotify);
       console.log('==================================================');
-      fs.appendFile('log.txt', ('\nArtist: ' + data.tracks.items[0].artists[0].name + '\nSong: ' + data.tracks.items[0].name + '\nPreview Link: ' + data.tracks.items[0].preview_url + '\nAlbum: ' + data.tracks.items[0].album.name + '\n')), (err) => {
+      fs.appendFile(
+        'log.txt', 
+        ('\nArtist: ' + 
+          data.tracks.items[0].artists[0].name + 
+          '\nSong: ' + data.tracks.items[0].name + 
+          '\nPreview Link: ' + data.tracks.items[0].preview_url + 
+          '\nAlbum: ' + data.tracks.items[0].album.name + 
+          '\n'), (err) => {
         if (err) {
           return console.log(err);
         }
-      }
-    // }
+      });
   });
 };
 
