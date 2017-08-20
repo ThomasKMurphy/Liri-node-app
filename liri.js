@@ -15,6 +15,8 @@ switch (action) {
   case 'do-what-it-says':
     says();
     break;
+  default:
+    console.log("I don't know that.")
 }
 
 function tweets() {
@@ -82,10 +84,6 @@ function movie() {
   var movieName = "";
   var queryUrl = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=40e9cece";
 
-  // if (value == null) {
-  //   value = 'Goodfellas';
-  // }
-
   for (var i = 2; i < value.length; i++) {
     if (i > 2 && i < value.length) {
       movieName = movieName + "+" + value[i];
@@ -121,3 +119,15 @@ function movie() {
     }
   });
 };
+
+function says() {
+  fs.readFile('random.txt', 'utf8', (err, data) => {
+    if (err) {
+      console.log(err);
+    }
+      var dataArr = data.split(",");
+      action = dataArr[0];
+      value = dataArr[1];
+      spotify(dataArr[1])
+  });
+}
