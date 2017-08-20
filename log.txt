@@ -45,3 +45,62 @@ Artist: For Today
 Song: Devastator
 Preview Link: https://p.scdn.co/mp3-preview/7fee75b4e75c7c7e8606c89bf9c384476623a98c?cid=ea48b89926cb46dea4abc0f5712eb362
 Album: Breaker
+
+sewerWeasel: Now IMDB API working! | Sat Aug 19 20:17:28 +0000 2017 
+
+sewerWeasel: Spotify is working! | Sat Aug 19 20:17:13 +0000 2017 
+
+sewerWeasel: working on node-spotify-api package today. | Thu Aug 17 14:05:03 +0000 2017 
+
+sewerWeasel: code code code code code | Thu Aug 17 14:03:08 +0000 2017 
+
+sewerWeasel: Twitter is working! | Thu Aug 17 02:07:37 +0000 2017 
+
+sewerWeasel: Hello Twitter! #myfirstTweet | Sat Aug 12 20:56:07 +0000 2017 
+
+Artist: Kansas
+Song: Carry on Wayward Son
+Preview Link: https://p.scdn.co/mp3-preview/3da6713464e61ceb35f993316c4e8c492d033c1e?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Leftoverture
+
+Title: John Wick
+Year: 2014
+IMDb Rating: 7.3
+Country: USA, China
+Language: English, Russian, Hungarian
+Plot: An ex-hitman comes out of retirement to track down the gangsters that took everything from him.
+Actors: Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe
+
+Title: undefined
+Year: undefined
+IMDb Rating: undefined
+Country: undefined
+Language: undefined
+Plot: undefined
+Actors: undefined
+
+Artist: For Today
+Song: Devastator
+Preview Link: https://p.scdn.co/mp3-preview/7fee75b4e75c7c7e8606c89bf9c384476623a98c?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Breaker
+
+Artist: Green Day
+Song: When I Come Around
+Preview Link: https://p.scdn.co/mp3-preview/d31a72f5f5a6fee7c92a32bed95ee4e13ce16dde?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Dookie
+
+Title: Frozen
+Year: 2013
+IMDb Rating: 7.5
+Country: USA
+Language: English, Icelandic
+Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+
+Title: Goodfellas
+Year: 1990
+IMDb Rating: 8.7
+Country: USA
+Language: English, Italian
+Plot: The story of Henry Hill and his life through the teen years into the years of mafia, covering his relationship with wife Karen Hill and his Mob partners Jimmy Conway and Tommy DeVitto in the Italian-American crime syndicate.
+Actors: Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco

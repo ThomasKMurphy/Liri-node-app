@@ -43,10 +43,10 @@ function tweets() {
             if (err) {
               return console.log(err);
             }
-          });
+          })
       }
     };
-  });
+  })
 };
 
 function spotify() {
@@ -59,11 +59,12 @@ function spotify() {
     value = 'Come Around';
   }
   spotify.search({ type: 'track', query: value, limit: 5 }, (err, data) => {
+    if (err) throw err;
     console.log('==================================================');
-    console.log("Artist: " + data.tracks.items[0].artists[0].name);
-    console.log("Song Name: " + data.tracks.items[0].name);
-    console.log("Album: " + data.tracks.items[0].album.name);
-    console.log("Spotify Preview Link: " + data.tracks.items[0].external_urls.spotify);
+    console.log('Artist: ' + data.tracks.items[0].artists[0].name);
+    console.log('Song Name: ' + data.tracks.items[0].name);
+    console.log('Album: ' + data.tracks.items[0].album.name);
+    console.log('Spotify Preview Link: ' + data.tracks.items[0].external_urls.spotify);
     console.log('==================================================');
     fs.appendFile(
       'log.txt',
@@ -75,18 +76,18 @@ function spotify() {
         if (err) {
           return console.log(err);
         }
-      });
-  });
+      })
+  })
 };
 
 function movie() {
   var request = require('request');
-  var movieName = "";
-  var queryUrl = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=40e9cece";
+  var movieName = '';
+  var queryUrl = 'http://www.omdbapi.com/?t=' + value + '&y=&plot=short&apikey=40e9cece';
 
   for (var i = 2; i < value.length; i++) {
     if (i > 2 && i < value.length) {
-      movieName = movieName + "+" + value[i];
+      movieName = movieName + '+' + value[i];
     } else {
       movieName += value[i];
     }
@@ -115,28 +116,28 @@ function movie() {
           if (err) {
             return console.log(err);
           }
-        });
+        })
     }
-  });
+  })
 };
 
 function says() {
-fs.readFile('random.txt', 'utf8', (err, data) => {
-  if (err) throw err;
-  var dataArr = data.split(',');
-  action = dataArr[0];
-  value = dataArr[1];
-  switch (action) {
-    case 'my-tweets':
-      tweets();
-      break;
-    case 'spotify-this-song':
-      spotify();
-      break;
-    case 'movie-this':
-      movie();
-      break;
-    case 'do-what-it-says':
-  }
-});
+  fs.readFile('random.txt', 'utf8', (err, data) => {
+    if (err) throw err;
+    var dataArr = data.split(',');
+    action = dataArr[0];
+    value = dataArr[1];
+    switch (action) {
+      case 'my-tweets':
+        tweets();
+        break;
+      case 'spotify-this-song':
+        spotify();
+        break;
+      case 'movie-this':
+        movie();
+        break;
+      case 'do-what-it-says':
+    }
+  })
 }
