@@ -121,13 +121,22 @@ function movie() {
 };
 
 function says() {
-  fs.readFile('random.txt', 'utf8', (err, data) => {
-    if (err) {
-      console.log(err);
-    }
-      var dataArr = data.split(",");
-      action = dataArr[0];
-      value = dataArr[1];
-      spotify(dataArr[1])
-  });
+fs.readFile('random.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  var dataArr = data.split(',');
+  action = dataArr[0];
+  value = dataArr[1];
+  switch (action) {
+    case 'my-tweets':
+      tweets();
+      break;
+    case 'spotify-this-song':
+      spotify();
+      break;
+    case 'movie-this':
+      movie();
+      break;
+    case 'do-what-it-says':
+  }
+});
 }
