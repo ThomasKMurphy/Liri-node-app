@@ -104,3 +104,70 @@ Country: USA
 Language: English, Italian
 Plot: The story of Henry Hill and his life through the teen years into the years of mafia, covering his relationship with wife Karen Hill and his Mob partners Jimmy Conway and Tommy DeVitto in the Italian-American crime syndicate.
 Actors: Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco
+
+sewerWeasel: Now IMDB API working! | Sat Aug 19 20:17:28 +0000 2017 
+
+sewerWeasel: Spotify is working! | Sat Aug 19 20:17:13 +0000 2017 
+
+sewerWeasel: working on node-spotify-api package today. | Thu Aug 17 14:05:03 +0000 2017 
+
+sewerWeasel: code code code code code | Thu Aug 17 14:03:08 +0000 2017 
+
+sewerWeasel: Twitter is working! | Thu Aug 17 02:07:37 +0000 2017 
+
+sewerWeasel: Hello Twitter! #myfirstTweet | Sat Aug 12 20:56:07 +0000 2017 
+
+Artist: Luis Fonsi
+Song: Despacito - Remix
+Preview Link: null
+Album: Despacito Feat. Justin Bieber (Remix)
+
+Title: The Shawshank Redemption
+Year: 1994
+IMDb Rating: 9.3
+Country: USA
+Language: English
+Plot: Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+Actors: Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+
+Title: Breaking Bad
+Year: 2008–2013
+IMDb Rating: 9.5
+Country: USA
+Language: English, Spanish
+Plot: A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.
+Actors: Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris
+
+Title: John Wick
+Year: 2014
+IMDb Rating: 7.3
+Country: USA, China
+Language: English, Russian, Hungarian
+Plot: An ex-hitman comes out of retirement to track down the gangsters that took everything from him.
+Actors: Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe
+
+Title: Mean Girls
+Year: 2004
+IMDb Rating: 7.0
+Country: USA, Canada
+Language: English, German, Vietnamese, Swahili
+Plot: Cady Heron is a hit with The Plastics, the A-list girl clique at her new school, until she makes the mistake of falling for Aaron Samuels, the ex-boyfriend of alpha Plastic Regina George.
+Actors: Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows
+
+Artist: For Today
+Song: Devastator
+Preview Link: https://p.scdn.co/mp3-preview/7fee75b4e75c7c7e8606c89bf9c384476623a98c?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Breaker
+
+Title: John Wick
+Year: 2014
+IMDb Rating: 7.3
+Country: USA, China
+Language: English, Russian, Hungarian
+Plot: An ex-hitman comes out of retirement to track down the gangsters that took everything from him.
+Actors: Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe
+
+Artist: Green Day
+Song: When I Come Around
+Preview Link: https://p.scdn.co/mp3-preview/d31a72f5f5a6fee7c92a32bed95ee4e13ce16dde?cid=ea48b89926cb46dea4abc0f5712eb362
+Album: Dookie
